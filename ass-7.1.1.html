@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Javascript Functions</title>		
+	<script type="text/javascript">
+	// The following variables are defined in the global scope
+      var num1 = 20,
+          num2 = 3,
+          name = 'jas';
+
+   // This function is defined  and called using gloabal variables
+	function  sub(){
+		var d= num1-num2;
+		return d;
+	}
+	document.write(sub()+ "<br>"); // returns 17
+	
+    function multiply() {
+     var c= num1 * num2;
+	return c;
+    }
+	document.write(multiply() + "<br>"); // Returns 60
+	// A nested function example
+    function getScore() {
+    function add() {
+      return name + ' scored ' + (num1 + num2);
+	  }
+      document.write( add());
+	}
+	getScore(); // Returns "jas scored 5"
+	</script>
+</head>
+</html>
